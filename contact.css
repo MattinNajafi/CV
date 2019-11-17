@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Catamaran";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: 0;
+    color:white;
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url('DIN\ Alternate\ Bold.ttf');
+}
+
+body {
+    height: 100%;
+}
+
+#logo {
+    margin-left: 2rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-family: "Catamaran";
+}
+
+#navbar ul a:last-child {
+    margin-right: 2rem;
+}
+
+#navbar ul a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #20f580;
+    transition: width 0.5s;
+}
+
+#navbar ul a:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+}
+
+/* Container */
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 40%;
+    margin: 1rem 0;
+    border: none;
+    padding-bottom: 0.2rem ;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+
+}
+
+input::placeholder{
+    color:#d3d3d3;
+    padding-left:3px;
+}
+
+#msg{
+    margin-top: 4rem;
+}
+
+#sentMessage{
+    padding:1rem 1rem;
+    font-size:1rem;
+    background:#20f580;
+    border:none;
+    border-radius: 0.3rem;
+    color:white;
+    cursor: pointer;
+}

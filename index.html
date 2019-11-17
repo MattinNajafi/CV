@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <title>MN - Front End Developer</title>
+    <script src="script.js" defer></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="firstFunction()">
+<!-- Frontpage -->
+
+    <!--- Navbar of frontpage-->
+
+    <nav id="navbar">
+        <a href="index.html"> <img id="logo" src="/images/logo.png" alt=""> </a>
+        <ul>
+            <a href="#backgroundtext" id="navbar-listitems2">About me</a>
+            <a href="#portfoliotext" id="navbar-listitems3">Portfolio</a>
+            <a href="contact.html" id="navbar-listitems4">Contact</a>
+        </ul>
+    </nav>
+
+    <!-- Grid of frontpage -->
+
+    <div class="grid">
+        <div class="centralBox">
+            <h2>Hi,<br> I'm
+                <span>M</span><span>a</span><span>t</span><span>t</span><span>i</span><span>n</span><span>,</span><br>
+                <span id="frontText"> Front End Developer</span>
+            </h2>
+            <ul>
+                <li>HTML 5</li>
+                <li>/</li>
+                <li>JavaScript</li>
+                <li>/</li>
+                <li>CSS</li>
+            </ul>
+            <a id="contactMeButton" href="contact.html">Contact me</a>
+        </div>
+        <i id="scrollArrow" class="fas fa-arrow-down"></i>
+    </div>
+
+    <!--- About me -->
+    <h1 id="backgroundtext">About me</h1>
+    <div class="flex">
+        <div class="aboutmebox">
+            <div class="infobutton">
+                <h3 id="personal">Personal Info</h3>
+                <h3 id="skills">Skills</h3>
+            </div>
+            <div class="info">
+                <p id="aboutMeText">My name is Mattin Najafi, I'm 24 years old and i have been interested in sports my
+                    whole life. I have been playing football since i was a kid.
+                    I have been working as a footballplayer my whole life, and been playing professionally in Italy,
+                    USA, and Sweden.<br>
+                    Since September 2019 have I started to
+                    study. I started to study at Medieinstitutet and im reading to become a Front End Developer. Since
+                    two years back I have been coding a lot during my free time
+                    and I'm hoping to develop and finally find me a job as a programmer.
+                </p>
+                <ul id="aboutMeSkills">
+                    <li>HTML 5</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!---Portfolio-->
+    <h1 id="portfoliotext">Portfolio</h1>
+
+    <div class="portfolio-grid">
+
+        <div id="projects1" onmouseout="portfolioimg1()">
+            <div class="imgdiv">
+                <img id="imgOfProject1" src="/images/medieinstitutet.png" alt="">
+            </div>
+            <div id="imgtext1">
+                <h3>Medieinstitutet</h3>
+                <p>
+                    Website of the school that I'm attending, me and my classmate modernized the website as a project.
+                    One of our first projects</p>
+                <a href="https://github.com/MattinNajafi/Medieinstituet"><button class="buttons"> View Code</button></a>
+                <a href="https://mattinnajafi.github.io/Medieinstituet/"><button class="buttons"> View
+                        Project</button></a>
+            </div>
+        </div>
+        <div id="projects3" onmouseout="portfolioimg3()">
+            <div class="imgdiv">
+                <img id="imgOfProject3" src="/images/spotify.png" alt="">
+            </div>
+            <div id="imgtext3">
+                <h3>Spotify</h3>
+                <p>
+                    Our absoulute first project. My classmate and I had to redo a website as much as possible, we chose
+                    Spotify.</p>
+                <a href="https://github.com/MattinNajafi/Spotify"><button class="buttons"> View Code</button></a>
+                <a href="https://mattinnajafi.github.io/Spotify/"><button class="buttons"> View Project</button></a>
+            </div>
+        </div>
+        <div id="projects2" onmouseout="portfolioimg2()">
+            <div class="imgdiv">
+                <img id="imgOfProject2" src="/images/numbergame.png" alt="">
+            </div>
+            <div id="imgtext2">
+                <h3>Nummerspel</h3>
+                <p>
+                    My first JavaScript assignment. We had to do a webbased text-game, based on what the user input.
+                </p>
+                <a href="https://github.com/MattinNajafi/numberGame"><button class="buttons"> View Code</button></a>
+                <a href="https://mattinnajafi.github.io/numberGame/"><button class="buttons"> View Project</button></a>
+            </div>
+        </div>
+        <div id="projects4" onmouseout="portfolioimg4()">
+            <div class="imgdiv">
+                <img id="imgOfProject4" src="/images/dayanddate.png" alt="">
+            </div>
+            <div id="imgtext4">
+                <h3>day N date</h3>
+                <p>
+                    An assignment I did quickly during a JavaScript lecture. A website that gets the date, time and day
+                    based on where you are in the world.</p>
+                <a href="https://github.com/MattinNajafi/dayAndDate"><button class="buttons"> View Code</button></a>
+                <a href="https://mattinnajafi.github.io/dayAndDate/"><button class="buttons"> View Project</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="socialmedia">
+            <div class="icons">
+                <a href="https://www.instagram.com/mattinnajafi"><i id="socialmediaicons"
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/maatteta"><i id="socialmediaicons" class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com"><i id="socialmediaicons" class="fab fa-twitter"></i></a>
+            </div>
+            <div class="name">
+                <h2>Mattin Atai Najafi</h2>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

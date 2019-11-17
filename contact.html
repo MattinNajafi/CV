@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact me - MN</title>
+</head>
+
+<body>
+    <nav id="navbar">
+       <a href="index.html"> <img id="logo"  src="/images/logo.png" alt=""> </a>
+        <ul>
+            <a href="#backgroundtext" id="navbar-listitems2">About me</a>
+            <a href="#portfoliotext" id="navbar-listitems3">Portfolio</a>
+            <a href="" id="navbar-listitems4">Contact</a>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="header">
+            <h1 id="header">Contact me</h1>
+            <p id="describingText">If you want to be in touch with me. Just fill in the form and send me a message. I
+                will respond in 24h.</p>
+        </div>
+
+        <form onsubmit="return validate()" class="form">
+            <input type="text" placeholder="Your name.." id="name">
+            <input type="email" placeholder="Your email.." id="mail">
+            <input type="phonenumber" placeholder="Your phonenumber.." id="number">
+            <input type="text" id="msg" placeholder="Your message..">
+            <button type="submit" id="sentMessage">Send message</button>
+        </form>
+
+    </div>
+
+    <script src="contact.js"> </script>
+</body>
+
+</html>

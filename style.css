@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DIN';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url('DIN\ Alternate\ Bold.ttf');
+}
+
+/* Navbar */
+
+#logo {
+    margin-left: 2rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-family: "Catamaran";
+}
+/* Grid */
+
+.grid {
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas: ". . ." "centralBox . ." ". scrollArrow .";
+}
+
+.centralBox {
+    padding-left: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-area: centralBox;
+}
+
+.centralBox h2 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.centralBox ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    cursor: normal;
+}
+
+.centralBox li {
+    font-weight: 100;
+    padding: 0 1rem;
+    opacity: 1;
+    font-family: "Catamaran";
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.centralBox li:first-child {
+    padding-left: 0;
+}
+
+/* Contact me button */
+
+#contactMeButton{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 0.5px solid rgb(32, 245, 128);
+    margin-top: 1rem;
+    color:rgb(32, 245, 128);
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    background: linear-gradient(to right, #20f580 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition: all 1s linear;
+    
+}
+
+
+
+/* Scroll bouncer */
+
+#scrollArrow {
+    color: white;
+    font-size: 2rem;
+    grid-area: scrollArrow;
+    justify-self: center;
+    animation: bounce 12s;
+    animation-iteration-count: infinite;
+    text-shadow: 1px 1px 4px black;
+}
+
+/* Mousecircles */
+
+
+
+/* #circles {
+    height: 15px;
+    width: 15px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    position: absolute;
+} */
+
+/* Background of about me box */
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+#backgroundtext {
+    font-size: 7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    z-index: -1;
+    margin-left:2rem;
+    color:white;
+}
+
+.aboutmebox {
+    background: white;
+    margin: 5.5rem 2rem;
+    width: 50%;
+    color:black;
+}
+
+.infobutton  {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.infobutton h3:hover{
+    background:rgb(32, 245, 128);;
+    color:black;
+}
+
+.infobutton h3{
+    padding:0.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.info{
+    padding:0.7rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.info p{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.info ul{
+    display:none;
+    list-style: none;
+}
+
+.info li{
+    font-family: 'Titillium Web', sans-serif;
+    margin:5px 0;
+}
+
+#aboutMeSkills{
+    flex-grow: 1;
+}
+
+
+/* Portfolio */
+
+#portfoliotext {
+    font-size: 7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    z-index: -1;
+    margin-left:2rem;
+    margin-top: 6rem;
+    color:white;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap:1rem;
+    margin:12.5rem 2rem 0rem;
+}
+
+#projects1, #projects2, #projects3, #projects4{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:2rem;
+}
+
+
+#imgOfProject1, #imgOfProject2, #imgOfProject3, #imgOfProject4{
+    width: 100%;
+    height: auto;
+}
+
+#imgtext1, #imgtext2, #imgtext3, #imgtext4{
+    display:none;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem 0.3rem 1rem 0.3rem;
+}
+
+#imgtext1 p, #imgtext2 p, #imgtext3 p, #imgtext4 p{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#imgtext1 h3,#imgtext2 h3,#imgtext3 h3,#imgtext4 h3{
+    padding: 0.3rem 0;
+    text-transform: uppercase;
+}
+.buttons {
+    padding:0.2rem 0.5rem;
+    border-radius: 15px;
+    border:0.5px solid black;
+    margin: 5px 0;
+    background:white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* footer */
+
+#socialmediaicons{
+    font-size:1.5rem;
+    padding-right: 1rem;
+    color:white;
+}
+
+.socialmedia{
+    display:flex;
+    justify-content: space-between;
+    padding:2rem 2rem;
+    border-top: .5px solid black;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
