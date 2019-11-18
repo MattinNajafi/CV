@@ -5,6 +5,7 @@
         font-family: 'DIN';
         box-sizing: border-box;
         scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
     }
     @font-face {
         font-family: 'DIN';
