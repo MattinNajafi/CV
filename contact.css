@@ -31,7 +31,8 @@ body {
 }
 
 #navbar ul {
-    display: flex;
+
+    display: none;
     list-style: none;
     justify-content: flex-end;
 }
@@ -78,7 +79,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 95%;
+    text-align: center;
 }
 
 /* Form */
