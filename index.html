@@ -11,14 +11,16 @@
         integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" media="screen and (min-width:970.2px)" href="style.css">
     <link rel="stylesheet" media="screen and (min-width:760px) and (max-width:970px)" href="smalllaptop.css">
-    <link rel="stylesheet" media="screen and (min-width: 500px) and (max-width:759.8px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width:759.8px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width:599.9px)" href="mobile.css">
+
     <link rel="stylesheet" href="animations.css">
     <title>MN - Front End Developer</title>
     <script src="script.js" defer></script>
 </head>
 
 <body onload="firstFunction()">
-<!-- Frontpage -->
+    <!-- Frontpage -->
 
     <!--- Navbar of frontpage-->
 
@@ -29,7 +31,21 @@
             <a href="#portfoliotext" id="navbar-listitems3">Portfolio</a>
             <a href="contact.html" id="navbar-listitems4">Contact</a>
         </ul>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
     </nav>
+    
+    <div class="mobilemenu">
+        <ul>
+            <a href="#backgroundtext" id="navbar-listitems2">About me</a>
+           <a href="#portfoliotext" id="navbar-listitems3">Portfolio</a>
+           <a href="contact.html" id="navbar-listitems4">Contact</a>
+        </ul>
+    </div>
 
     <!-- Grid of frontpage -->
 
@@ -81,63 +97,69 @@
     <!---Portfolio-->
     <h1 id="portfoliotext">Portfolio</h1>
     <div class="container">
-    <div class="portfolio-grid">
+        <div class="portfolio-grid">
 
-        <div id="projects1" onmouseout="portfolioimg1()">
-            <div class="imgdiv">
-                <img id="imgOfProject1" src="/images/medieinstitutet.png" alt="">
+            <div id="projects1" onmouseout="portfolioimg1()">
+                <div class="imgdiv">
+                    <img id="imgOfProject1" src="/images/medieinstitutet.png" alt="">
+                </div>
+                <div id="imgtext1">
+                    <h3>Medieinstitutet</h3>
+                    <p>
+                        Website of the school that I'm attending, me and my classmate modernized the website as a
+                        project.
+                        One of our first projects</p>
+                    <a href="https://github.com/MattinNajafi/Medieinstituet"><button class="buttons"> View
+                            Code</button></a>
+                    <a href="https://mattinnajafi.github.io/Medieinstituet/"><button class="buttons"> View
+                            Project</button></a>
+                </div>
             </div>
-            <div id="imgtext1">
-                <h3>Medieinstitutet</h3>
-                <p>
-                    Website of the school that I'm attending, me and my classmate modernized the website as a project.
-                    One of our first projects</p>
-                <a href="https://github.com/MattinNajafi/Medieinstituet"><button class="buttons"> View Code</button></a>
-                <a href="https://mattinnajafi.github.io/Medieinstituet/"><button class="buttons"> View
-                        Project</button></a>
+            <div id="projects3" onmouseout="portfolioimg3()">
+                <div class="imgdiv">
+                    <img id="imgOfProject3" src="/images/spotify.png" alt="">
+                </div>
+                <div id="imgtext3">
+                    <h3>Spotify</h3>
+                    <p>
+                        Our absoulute first project. My classmate and I had to redo a website as much as possible, we
+                        chose
+                        Spotify.</p>
+                    <a href="https://github.com/MattinNajafi/Spotify"><button class="buttons"> View Code</button></a>
+                    <a href="https://mattinnajafi.github.io/Spotify/"><button class="buttons"> View Project</button></a>
+                </div>
             </div>
-        </div>
-        <div id="projects3" onmouseout="portfolioimg3()">
-            <div class="imgdiv">
-                <img id="imgOfProject3" src="/images/spotify.png" alt="">
+            <div id="projects2" onmouseout="portfolioimg2()">
+                <div class="imgdiv">
+                    <img id="imgOfProject2" src="/images/numbergame.png" alt="">
+                </div>
+                <div id="imgtext2">
+                    <h3>numberGame</h3>
+                    <p>
+                        My first JavaScript assignment. We had to do a webbased text-game, based on what the user input.
+                    </p>
+                    <a href="https://github.com/MattinNajafi/numberGame"><button class="buttons"> View Code</button></a>
+                    <a href="https://mattinnajafi.github.io/numberGame/"><button class="buttons"> View
+                            Project</button></a>
+                </div>
             </div>
-            <div id="imgtext3">
-                <h3>Spotify</h3>
-                <p>
-                    Our absoulute first project. My classmate and I had to redo a website as much as possible, we chose
-                    Spotify.</p>
-                <a href="https://github.com/MattinNajafi/Spotify"><button class="buttons"> View Code</button></a>
-                <a href="https://mattinnajafi.github.io/Spotify/"><button class="buttons"> View Project</button></a>
-            </div>
-        </div>
-        <div id="projects2" onmouseout="portfolioimg2()">
-            <div class="imgdiv">
-                <img id="imgOfProject2" src="/images/numbergame.png" alt="">
-            </div>
-            <div id="imgtext2">
-                <h3>Nummerspel</h3>
-                <p>
-                    My first JavaScript assignment. We had to do a webbased text-game, based on what the user input.
-                </p>
-                <a href="https://github.com/MattinNajafi/numberGame"><button class="buttons"> View Code</button></a>
-                <a href="https://mattinnajafi.github.io/numberGame/"><button class="buttons"> View Project</button></a>
-            </div>
-        </div>
-        <div id="projects4" onmouseout="portfolioimg4()">
-            <div class="imgdiv">
-                <img id="imgOfProject4" src="/images/dayanddate.png" alt="">
-            </div>
-            <div id="imgtext4">
-                <h3>day N date</h3>
-                <p>
-                    An assignment I did quickly during a JavaScript lecture. A website that gets the date, time and day
-                    based on where you are in the world.</p>
-                <a href="https://github.com/MattinNajafi/dayAndDate"><button class="buttons"> View Code</button></a>
-                <a href="https://mattinnajafi.github.io/dayAndDate/"><button class="buttons"> View Project</button></a>
+            <div id="projects4" onmouseout="portfolioimg4()">
+                <div class="imgdiv">
+                    <img id="imgOfProject4" src="/images/dayanddate.png" alt="">
+                </div>
+                <div id="imgtext4">
+                    <h3>day N date</h3>
+                    <p>
+                        An assignment I did quickly during a JavaScript lecture. A website that gets the date, time and
+                        day
+                        based on where you are in the world.</p>
+                    <a href="https://github.com/MattinNajafi/dayAndDate"><button class="buttons"> View Code</button></a>
+                    <a href="https://mattinnajafi.github.io/dayAndDate/"><button class="buttons"> View
+                            Project</button></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Footer -->
 

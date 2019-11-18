@@ -9,7 +9,7 @@ document.getElementById("projects1").addEventListener("mouseover", portfolioText
 document.getElementById("projects2").addEventListener("mouseover", portfolioText2)
 document.getElementById("projects3").addEventListener("mouseover", portfolioText3)
 document.getElementById("projects4").addEventListener("mouseover", portfolioText4)
-document.body.style.cursor = ""
+document.querySelector(".hamburger").addEventListener("click" , hamburgerMenu)
 
 
 // document.onmousemove = mouseCircles;
@@ -115,6 +115,17 @@ function logo() {
     document.getElementById("logo").style.cursor = "pointer"
 }
 
+/**
+ * my hamburgermenu
+ */
+function hamburgerMenu(){
+    let activate = document.querySelector(".hamburger")
+    activate.classList.toggle("is-active")
+
+    let mobilemenu = document.querySelector(".mobilemenu")
+    mobilemenu.classList.toggle("hide")
+
+}
 
 /**
  * Hiding the skillbox when you click on personal button, and showing personalbox

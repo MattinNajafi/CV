@@ -42,6 +42,15 @@
     color: white;
     font-family: "Catamaran";
 }
+
+/* Hamburgermenu */
+
+.hamburger{
+    display:none;
+}
+.mobilemenu {
+   display:none;
+}
 /* Grid */
 
 .grid {

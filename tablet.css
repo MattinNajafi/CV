@@ -41,6 +41,16 @@
     color: white;
     font-family: "Catamaran";
 }
+
+.mobilemenu{
+    display:none;
+}
+
+/* Hamburgermenu */
+
+.hamburger{
+    display:none;
+}
 /* Grid */
 
 .grid {
@@ -151,7 +161,7 @@
 .aboutmebox {
     background: white;
     margin: 6.5rem 2rem 5.5rem;
-    width: 70%;
+    width: 80%;
     color:black;
 }
 
