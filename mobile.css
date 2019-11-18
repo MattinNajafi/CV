@@ -1,4 +1,4 @@
-@media only screen and (min-width:5px), (max-width: 599px) {
+@media only screen and (min-width:5px), (max-width: 650.9px) {
     * {
         margin: 0;
         padding: 0;
@@ -208,6 +208,21 @@
     #aboutMeSkills {
         flex-grow: 1;
     }
+    #aboutMeSkills li:nth-child(1) {
+        width: 90%;
+        background: #20f580;
+        padding-left: 7px;
+    }
+    #aboutMeSkills li:nth-child(2) {
+        width: 30%;
+        background: #20f580;
+        padding-left: 7px;
+    }
+    #aboutMeSkills li:nth-child(3) {
+        width: 80%;
+        background: #20f580;
+        padding-left: 7px;
+    }
     /* Portfolio */
     .container {
         display: flex;
@@ -282,3 +297,89 @@
         font-size:0.5rem;
     }
 }
+
+/* Animations */
+
+@keyframes bounce {
+    0% {
+        margin-top: 1rem;
+    }
+    10% {
+        margin-top: 2rem;
+    }
+    20% {
+        margin-top: 1rem;
+    }
+    30% {
+        margin-top: 2rem;
+    }
+    40% {
+        margin-top: 1rem;
+    }
+    50% {
+        margin-top: 2rem;
+    }
+    60% {
+        margin-top: 1rem;
+    }
+    70% {
+        margin-top: 2rem;
+    }
+    80% {
+        margin-top: 1rem;
+    }
+    90% {
+        margin-top: 2rem;
+    }
+    100% {
+        margin-top: 1rem;
+    }
+}
+
+/* Span animation */
+
+
+
+/* Contactmebutton */
+
+#contactMeButton:hover{
+    color:white;
+    background-position:left bottom;
+    font-weight:500;
+    text-shadow: 1px 1px 10px black;
+}
+
+/* Navbar animations */
+
+#navbar ul a:last-child {
+    margin-right: 2rem;
+}
+
+#navbar ul a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #20f580;
+    transition: width 0.5s;
+}
+
+#navbar ul a:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+}
+
+
+
+
+
+/* buttons of imageboxes */
+
+.buttons:hover{
+    background:#20f580;
+    color:black;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+

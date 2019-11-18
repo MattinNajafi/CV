@@ -282,3 +282,138 @@ display:none
     font-family: 'Titillium Web', sans-serif;
 }
 
+
+/* Animations */
+
+@keyframes bounce {
+    0% {
+        margin-top: 1rem;
+    }
+    10% {
+        margin-top: 2rem;
+    }
+    20% {
+        margin-top: 1rem;
+    }
+    30% {
+        margin-top: 2rem;
+    }
+    40% {
+        margin-top: 1rem;
+    }
+    50% {
+        margin-top: 2rem;
+    }
+    60% {
+        margin-top: 1rem;
+    }
+    70% {
+        margin-top: 2rem;
+    }
+    80% {
+        margin-top: 1rem;
+    }
+    90% {
+        margin-top: 2rem;
+    }
+    100% {
+        margin-top: 1rem;
+    }
+}
+
+/* Span animation */
+
+
+
+/* Contactmebutton */
+
+#contactMeButton:hover{
+    color:white;
+    background-position:left bottom;
+    font-weight:500;
+    text-shadow: 1px 1px 10px black;
+}
+
+/* Navbar animations */
+
+#navbar ul a:last-child {
+    margin-right: 2rem;
+}
+
+#navbar ul a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #20f580;
+    transition: width 0.5s;
+}
+
+#navbar ul a:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+}
+
+/* 
+/* Skillsbox every child  */
+
+
+
+/*first li child */
+#aboutMeSkills li:first-child:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background: #20f580;
+    transition: width 0.5s;
+}
+
+#aboutMeSkills li:first-child:hover::after {
+    width: 90%;
+} 
+
+ /*last li childd */
+#aboutMeSkills li:last-child:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background: #20f580;
+    transition: width 0.5;
+}
+
+#aboutMeSkills li:last-child:hover::after {
+    width: 75%;
+    transition: width 0.5s;
+} 
+
+/* Second li child */
+
+ #aboutMeSkills li::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background: #20f580;
+    transition: width 0.5s;
+}
+
+#aboutMeSkills li:hover::after {
+    width: 30%;
+    transition: width 0.5s;
+} 
+
+/* buttons of imageboxes */
+
+.buttons:hover{
+    background:#20f580;
+    color:black;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+
