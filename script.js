@@ -9,6 +9,7 @@ document.getElementById("projects1").addEventListener("mouseover", portfolioText
 document.getElementById("projects2").addEventListener("mouseover", portfolioText2)
 document.getElementById("projects3").addEventListener("mouseover", portfolioText3)
 document.getElementById("projects4").addEventListener("mouseover", portfolioText4)
+document.body.style.cursor = ""
 
 
 // document.onmousemove = mouseCircles;
@@ -21,8 +22,9 @@ document.getElementById("projects4").addEventListener("mouseover", portfolioText
 //     circle.style.left = event.clientX + "px"
 //     circle.style.top = event.clientY + "px"
 
-//     circle.style.left = circle.offsetLeft - 15 + "px"
-//     circle.style.top = circle.offsetTop - 15 + "px"
+//     circle.style.left = circle.offsetLeft - 20 + "px"
+//     circle.style.top = circle.offsetTop - 20 + "px"
+    
 
 //     circle.style.transition = "all 0.7s linear 0s"
 //     circle.style.opacity = "0"
@@ -31,12 +33,13 @@ document.getElementById("projects4").addEventListener("mouseover", portfolioText
 //     circle.style.height = "40px"
 //     circle.style.borderRadius = "30px"
 
+
 // }
 /**
  * Setting my background depending on which time it is
  */
 function setBackground() {
-    
+
     if (hour <= 10 && hour >= 5) {
         document.body.style.background = "linear-gradient(to bottom,#FF5F6D,#FFC371)"
     }

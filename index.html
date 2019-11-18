@@ -9,14 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:970.2px)" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:760px) and (max-width:970px)" href="smalllaptop.css">
+    <link rel="stylesheet" media="screen and (min-width: 500px) and (max-width:759.8px)" href="tablet.css">
     <link rel="stylesheet" href="animations.css">
     <title>MN - Front End Developer</title>
     <script src="script.js" defer></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body onload="firstFunction()">
@@ -82,7 +80,7 @@
 
     <!---Portfolio-->
     <h1 id="portfoliotext">Portfolio</h1>
-
+    <div class="container">
     <div class="portfolio-grid">
 
         <div id="projects1" onmouseout="portfolioimg1()">
@@ -139,6 +137,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <!-- Footer -->
 

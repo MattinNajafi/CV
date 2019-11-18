@@ -30,6 +30,9 @@ function validate() {
     if (wholeName.value.trim() == "" || mail.value.trim() == "" || phoneNumber.value.trim() == "" 
     || message.value.trim() == "" || message.value.trim() == null) {
         changeText.innerHTML = "No blank values allowed."
+        changeText.style.color = "red"
+        changeText.style.fontWeight = "900"
+        changeText.style.textShadow = "1px 1px 5px black"
         return false
     }
     else{
@@ -43,6 +46,7 @@ function validate() {
         changeText.style.fontSize = "2rem"
         changeText.style.color = "#20f580"
         changeText.style.fontWeight = "bolder"
+        changeText.style.textShadow = "1px 1px 5px black"
         return false
     }
 }
