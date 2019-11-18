@@ -83,7 +83,7 @@ function finalOpacity(){
 }
 
 function finalText(){
-    let changeText = firstText.innerHTML.replace("Just Kidding" , "Soon Front End Developer")
+    let changeText = firstText.innerHTML.replace("Just Kidding" , "Soon Front <br>End Developer")
     firstText.style.transition = "opacity 2s linear 0s"
     firstText.style.opacity = "1";
     document.getElementById("frontText").innerHTML = changeText
