@@ -83,6 +83,12 @@ body {
     text-align: center;
 }
 
+.header h1{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Titillium Web', sans-serif;
+}
+
 /* Form */
 
 .form {

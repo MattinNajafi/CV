@@ -125,8 +125,8 @@ function hamburgerMenu(){
     let mobilemenu = document.querySelector(".mobilemenu")
     mobilemenu.classList.toggle("hide")
 
-    let logohiding = document.getElementById("logo")
-    logohiding.classList.toggle("hide")
+    // let logohiding = document.getElementById("logo")
+    // logohiding.classList.toggle("hide")
 
 }
 
