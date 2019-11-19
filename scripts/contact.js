@@ -1,23 +1,27 @@
-let now = new Date()
-let timma = now.getHours()
+let dateOfToday = new Date()
+let hourOfNow = dateOfToday.getHours()
 
-
+/**
+ * setting the background depending on time of day
+ */
 function setBackground() {
 
-    if (timma <= 10 && timma >= 5) {
+    if (hourOfNow <= 10 && hourOfNow >= 5) {
         document.body.style.background = "linear-gradient(to bottom,#FF5F6D,#FFC371)"
     }
-    else if (timma >= 11 && timma <= 17) {
+    else if (hourOfNow >= 11 && hourOfNow <= 17) {
         document.body.style.background = "linear-gradient(to bottom,#005AA7,#b4dafa)"
     }
-    else if (timma >= 18 && timma <= 23) {
+    else if (hourOfNow >= 18 && hourOfNow <= 23) {
         document.body.style.background = " linear-gradient(to bottom,#000428,#01396b)"
     }
     else {
         document.body.style.background = "linear-gradient(to bottom,#000000,#434343)"
     }
 }
-
+/**
+ * validation of the formular, adding style attributes if value not correct.
+ */
 function validate() {
     let changeText = document.getElementById("describingText")
     var wholeName = document.getElementById("name")
