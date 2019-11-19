@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'DIN';
-    src: url('DIN\ Alternate\ Bold.ttf');
+    src: url(../fonts/DIN\ Alternate\ Bold.ttf);
 }
 
 /* Navbar */
@@ -160,10 +160,10 @@
 }
 
 .aboutmebox {
-    background: white;
+    background: whitesmoke;
     margin: 6.5rem 2rem 5.5rem;
     width: 80%;
-    color:black;
+    color:#686868;
 }
 
 .infobutton  {
@@ -254,6 +254,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom:2rem;
+    color:#686868;
 }
 
 

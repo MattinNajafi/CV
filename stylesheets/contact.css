@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'DIN';
-    src: url('DIN\ Alternate\ Bold.ttf');
+    src: url(../fonts/DIN\ Alternate\ Bold.ttf);
 }
 
 body {

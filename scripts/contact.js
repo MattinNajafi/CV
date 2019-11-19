@@ -1,16 +1,16 @@
-let today = new Date()
-let hour = today.getHours()
+let now = new Date()
+let timma = now.getHours()
 
 
 function setBackground() {
 
-    if (hour <= 10 && hour >= 5) {
+    if (timma <= 10 && timma >= 5) {
         document.body.style.background = "linear-gradient(to bottom,#FF5F6D,#FFC371)"
     }
-    else if (hour >= 11 && hour <= 17) {
+    else if (timma >= 11 && timma <= 17) {
         document.body.style.background = "linear-gradient(to bottom,#005AA7,#b4dafa)"
     }
-    else if (hour >= 18 && hour <= 23) {
+    else if (timma >= 18 && timma <= 23) {
         document.body.style.background = " linear-gradient(to bottom,#000428,#01396b)"
     }
     else {

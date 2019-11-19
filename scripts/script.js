@@ -150,28 +150,28 @@ function skills() {
 function portfolioText1() {
     document.getElementById("imgOfProject1").style.display = "none"
     document.getElementById("imgtext1").style.display = "flex"
-    document.getElementById("projects1").style.background = "white"
+    document.getElementById("projects1").style.background = "whitesmoke"
 
 
 }
 function portfolioText2() {
     document.getElementById("imgOfProject2").style.display = "none"
     document.getElementById("imgtext2").style.display = "flex"
-    document.getElementById("projects2").style.background = "white"
+    document.getElementById("projects2").style.background = "whitesmoke"
 
 
 }
 function portfolioText3() {
     document.getElementById("imgOfProject3").style.display = "none"
     document.getElementById("imgtext3").style.display = "flex"
-    document.getElementById("projects3").style.background = "white"
+    document.getElementById("projects3").style.background = "whitesmoke"
 
 }
 function portfolioText4() {
 
     document.getElementById("imgOfProject4").style.display = "none"
     document.getElementById("imgtext4").style.display = "flex"
-    document.getElementById("projects4").style.background = "white"
+    document.getElementById("projects4").style.background = "whitesmoke"
 
 }
 
