@@ -40,7 +40,6 @@ document.querySelector(".hamburger").addEventListener("click", hamburgerMenu)
  * Setting my background depending on which time it is
  */
 function setBackground() {
-    hour = 0
     if (hour <= 10 && hour >= 5) {
         document.body.style.background = "linear-gradient(to bottom,#FF5F6D,#FFC371)"
     }
