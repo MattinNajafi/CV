@@ -148,80 +148,11 @@ function skills() {
     document.getElementById("aboutMeText").style.display = "none"
     document.getElementById("aboutMeSkills").style.display = "block"
 
-
 }
 /**
  * hiding the image and displaying the text when mouseover, and chaning the background
  */
-function portfolioText1() {
-    document.getElementById("imgOfProject1").style.display = "none"
-    document.getElementById("imgtext1").style.display = "flex"
-    document.getElementById("projects1").style.background = "whitesmoke"
 
-
-}
-/**
- * hiding the image and displaying the text when mouseover, and chaning the background
- */
-function portfolioText2() {
-    document.getElementById("imgOfProject2").style.display = "none"
-    document.getElementById("imgtext2").style.display = "flex"
-    document.getElementById("projects2").style.background = "whitesmoke"
-
-
-}
-/**
- * hiding the image and displaying the text when mouseover, and chaning the background
- */
-function portfolioText3() {
-    document.getElementById("imgOfProject3").style.display = "none"
-    document.getElementById("imgtext3").style.display = "flex"
-    document.getElementById("projects3").style.background = "whitesmoke"
-
-}
-// /**
-//  * hiding the image and displaying the text when mouseover, and chaning the background
-//  */
-// function portfolioText4() {
-
-//     document.getElementById("imgOfProject4").style.display = "none"
-//     document.getElementById("imgtext4").style.display = "flex"
-//     document.getElementById("projects4").style.background = "whitesmoke"
-
-// }
-// /**
-//  * going back to normal when mouseleave, displaying the image again and hiding the text
-//  */
-// function portfolioimg1() {
-//     document.getElementById("imgOfProject1").style.display = ""
-//     document.getElementById("imgtext1").style.display = "none"
-//     document.getElementById("projects1").style.background = ""
-
-// }
-// /**
-//  * going back to normal when mouseleave, displaying the image again and hiding the text
-//  */
-// function portfolioimg2() {
-//     document.getElementById("imgOfProject2").style.display = ""
-//     document.getElementById("imgtext2").style.display = "none"
-//     document.getElementById("projects2").style.background = ""
-// }
-// /**
-//  * going back to normal when mouseleave, displaying the image again and hiding the text
-//  */
-// function portfolioimg3() {
-//     document.getElementById("imgOfProject3").style.display = ""
-//     document.getElementById("imgtext3").style.display = "none"
-//     document.getElementById("projects3").style.background = ""
-// }
-// /**
-//  * going back to normal when mouseleave, displaying the image again and hiding the text
-//  */
-// function portfolioimg4() {
-//     document.getElementById("imgOfProject4").style.display = ""
-//     document.getElementById("imgtext4").style.display = "none"
-//     document.getElementById("projects4").style.background = ""
-// }
 
 function hoveringOverImages(name, img, info) {
     document.getElementById(img).style.display = "none"
